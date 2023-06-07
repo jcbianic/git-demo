@@ -1,34 +1,19 @@
-# Git Demo
-
+# git-demo
+A Git Repo to demonstrate Git functionnalities
 SHOULD NOT BE HERE
+### Preparing your commit
 
-### Branch Manipulation
+- Choose which Files to Stage
+- Choose which Lines to Stage
+- Concise descriptive and specific message (you can add details in the description)
+- [Optional] Amend you last commit if you need to (and avoid duplicates)
 
-### Creation and Tracking
+### Clean up the Mess behind you
 
-Note: *I like to do these operations with the command-line but you could do it in Fork.*
+Mistakes are common. Git is here to help you clean up the mess.
 
-```bash
-# Creating a Branch and Variation
+You might need to:
 
-## Creating a new branch locally
-git checkout -b feature/app_structure
-
-## Start Tracking a branch that exists on remote
-git fetch [origin]
-git checkout feature/branch_that_exists_on_remote
-
-# Naming Conventions
-git checkout -b feature/name_of_the_feature
-git checkout -b hotfix/name_of_bug
-git checkout -b misc/for_any_other_thing
-
-# Renaming
-git branch -m feature/new_name # will rename the current branch
-# If the branch exists remotely, you should delete it (Proceed with caution here !!)
-git push --delete feature/old_name
-# and push the new branch
-git push  feature/new_name
-```
-
-### Rebasing
+- Ignore a commit (erase it from history) ⇒ drop or reset
+- Move one or several commits to another branch ⇒ cherry-pick or reset
+- Change the whole history (change order, rename, squash…) ⇒ interactive rebase
