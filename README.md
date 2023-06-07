@@ -19,3 +19,10 @@ git checkout -b feature/app_structure
 ## Start Tracking a branch that exists on remote
 git fetch [origin]
 git checkout feature/branch_that_exists_on_remote
+
+# Naming Conventions
+git checkout -b feature/name_of_the_feature
+git checkout -b hotfix/name_of_bug
+git checkout -b misc/for_any_other_thing
+
+# Renaming
