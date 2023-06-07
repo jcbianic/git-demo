@@ -24,3 +24,11 @@ git checkout -b hotfix/name_of_bug
 git checkout -b misc/for_any_other_thing
 
 # Renaming
+git branch -m feature/new_name # will rename the current branch
+# If the branch exists remotely, you should delete it (Proceed with caution here !!)
+git push --delete feature/old_name
+# and push the new branch
+git push  feature/new_name
+```
+
+### Rebasing
