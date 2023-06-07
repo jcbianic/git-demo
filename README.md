@@ -34,3 +34,13 @@ git push  feature/new_name
 ```
 
 ### Rebasing
+
+Rebasing your branches has two main benefits :
+
+- Resolving conflicts at the right moment and in the correct order: the commits you are about to merge come after commits that are already part of the master. ⇒ a little bit of an overkill in our case because we don’t have a lot of conflicts yet.
+- Making the CI/CD status of your PR more reliable. (that is the real reason)
+    
+    Your branch might pass the CI/CD when outdated but then fail when merged into the master because your fresh commits introduce a bug with the newest code version (like broken import due to moving files around or renaming objects). 
+    
+    By rebasing on the latest HEAD of the master, the HEAD of your branch has the exact same state as will the master once it is merged. Thus the result of the CI/CD is more reliable when your branch is rebased just before merging.
+    
