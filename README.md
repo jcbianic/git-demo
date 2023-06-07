@@ -44,3 +44,13 @@ Rebasing your branches has two main benefits :
     
     By rebasing on the latest HEAD of the master, the HEAD of your branch has the exact same state as will the master once it is merged. Thus the result of the CI/CD is more reliable when your branch is rebased just before merging.
     
+
+```bash
+# How to keep your branch up to date
+git checkout master
+git pull
+git checkout feature/branch_to_rebase_on_master
+git pull
+git rebase master # git will re-apply the commit of your branch starting with
+git push --force-with-lease # beware this will break other contributors' commit history
+```
