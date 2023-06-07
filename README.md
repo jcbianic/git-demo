@@ -1,6 +1,8 @@
 # Git Demo
 
 SHOULD NOT BE HERE
+SHOULD NOT BE HERE
+
 
 ### Branch Manipulation
 
