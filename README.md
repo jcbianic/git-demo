@@ -1,6 +1,6 @@
 # git-demo
 A Git Repo to demonstrate Git functionnalities
-
+SHOULD NOT BE HERE
 ### Preparing your commit
 
 - Choose which Files to Stage
